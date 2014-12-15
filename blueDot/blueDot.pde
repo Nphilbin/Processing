@@ -1,12 +1,12 @@
 void setup() {
-size(640, 480);
+  size(640, 480);
 } 
 
 void draw() {
-  background(255,255,180);
+  background(255, 255, 180);
 
   float x = mouseX; 
-  float y= mouseY;
+  float y = mouseY;
   float xDiameter = 80;
   float yDiameter = 40;
 
@@ -14,3 +14,4 @@ void draw() {
   noStroke();
   ellipse(x, y, xDiameter, yDiameter);
 }
+

@@ -1,5 +1,3 @@
-/* @pjs preload="ystone08.jpg"; */ 
-
 PImage img;
 int[][] imgPixels;
 float sval = 1.0;
@@ -10,7 +8,7 @@ void setup() {
   size(640, 360, P3D);
   noFill();
   stroke(255);
-  img = loadImage("ystone08.jpg");
+  img = loadImage("unknown.jpg");
   imgPixels = new int[img.width][img.height];
   for (int i = 0; i < img.height; i++) {
     for (int j = 0; j < img.width; j++) {
@@ -25,11 +23,11 @@ void draw() {
   nmx += (mouseX-nmx)/20; 
   nmy += (mouseY-nmy)/20; 
 
-  if(mousePressed) { 
-    sval += 0.005; 
+  if (mousePressed) { 
+    sval += 0.005;
   } 
   else {
-    sval -= 0.01; 
+    sval -= 0.01;
   }
 
   sval = constrain(sval, 1.0, 2.0);
@@ -54,6 +52,4 @@ void draw() {
   }
 }
 
-
-  
 

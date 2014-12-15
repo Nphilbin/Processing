@@ -7,7 +7,9 @@ void colorToColor() {
   int i = 0;
   for (int pxl : pixels) {    
     float colorShade = (red(pxl) + green(pxl) + blue(pxl))/3;
-    float r = (i * colorShade + (numberOfFrames - i)*red(pxl))/ 
+    float r = (i * colorShade + (numberOfFrames - i)*red(pxl))/numberOfFrames;
+    float g = (i * colorShade + (numberOfFrames - i)*green(pxl))/numberOfFrames;
+    float b = (i * colorShade + (numberOfFrames - i)*blue(pxl))/numberOfFrames;
     pixels[i++] = color(colorShade);
   }
 } 
@@ -31,3 +33,4 @@ void colorToGray() {
     pixels[i++] = color(grayShade);
   }
 } 
+

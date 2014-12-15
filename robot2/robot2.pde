@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() { 
-  background(300);
+  background(243);
 
 
 
@@ -27,4 +27,5 @@ void draw() {
     robots.get(i).draw();
   }
 }
+
 
